@@ -3,8 +3,8 @@
 - include: "*.view.lookml"       # include all views in this project
 - include: "*.dashboard.lookml"  # include all dashboards in this project
 
-- explore: order_items
-#   access_filter_fields: [users.id]
+- explore: order_items   
+  access_filter_fields: [users.id]
   joins:
     - join: orders
       type: left_outer 
