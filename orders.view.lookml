@@ -9,8 +9,12 @@
 
   - dimension_group: created
     type: time
-    timeframes: [time, date, week, month]
+    timeframes: [time, date, week, month, year]
     sql: ${TABLE}.created_at
+    
+  - dimension: max_date
+    type: number
+    sql: MAX(${TABLE}.created_at)
 
   - dimension: status
     type: string

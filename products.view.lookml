@@ -34,6 +34,10 @@
   - dimension: sku
     type: string
     sql: ${TABLE}.sku
+    
+  - dimension: products_yesno
+    type: yesno
+    sql: ${products.count} > 1000
 
   - measure: count
     type: count

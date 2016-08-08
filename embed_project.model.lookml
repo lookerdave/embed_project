@@ -3,6 +3,8 @@
 - include: "*.view.lookml"       # include all the views
 - include: "*.dashboard.lookml"  # include all the dashboards
 
+- explore: yesno_string
+
 - explore: events
   joins:
     - join: users
