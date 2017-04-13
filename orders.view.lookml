@@ -9,7 +9,8 @@
 
   - dimension_group: created
     type: time
-    timeframes: [time, date, week, month, year]
+    allow_fill: no
+    timeframes: [time, date, week, month, quarter, year]
     sql: ${TABLE}.created_at
     
   - dimension: max_date

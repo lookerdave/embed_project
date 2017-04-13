@@ -10,6 +10,7 @@
   - dimension: brand
     type: string
     sql: ${TABLE}.brand
+    drill_fields: [item_name]
 
   - dimension: category
     type: string

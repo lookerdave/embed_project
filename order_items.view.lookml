@@ -29,4 +29,20 @@
   - measure: count
     type: count
     drill_fields: [id, orders.id, inventory_items.id]
+    
+
+  - dimension: count_of_antiemetics_given 
+    view_label: "Case Drugs"
+    type: number
+    sql: count(${id})
+
+
+  - measure: mips_430_numerator 
+    label: "MIPS 430: Numerator"
+    description: "Antiemetics given value >= 2 items selected from pick list"
+    view_label: "Quality Outcomes"
+    type: count
+    filters: 
+      count_of_antiemetics_given: '>2'
+
 
